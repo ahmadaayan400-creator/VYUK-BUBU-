@@ -67,11 +67,12 @@ body::before{
     }
 }
 
+
+/* PAGE */
+
 .page{
     width:100%;
-
     display:flex;
-
     justify-content:center;
     align-items:center;
 }
@@ -79,6 +80,9 @@ body::before{
 .hidden{
     display:none !important;
 }
+
+
+/* CARD */
 
 .card{
     position:relative;
@@ -89,23 +93,17 @@ body::before{
 
     text-align:center;
 
-    border:
-    1px solid
-    rgba(255,255,255,.22);
+    border:1px solid rgba(255,255,255,.22);
 
     border-radius:32px;
 
-    background:
-    rgba(255,255,255,.09);
+    background:rgba(255,255,255,.09);
 
     backdrop-filter:blur(20px);
 
     box-shadow:
-    0 25px 80px
-    rgba(0,0,0,.45),
-
-    0 0 45px
-    rgba(255,120,180,.18);
+    0 25px 80px rgba(0,0,0,.45),
+    0 0 45px rgba(255,120,180,.18);
 
     animation:enter .9s ease;
 }
@@ -114,29 +112,24 @@ body::before{
 
     from{
         opacity:0;
-
-        transform:
-        translateY(25px)
-        scale(.95);
+        transform:translateY(25px) scale(.95);
     }
 
     to{
         opacity:1;
-
-        transform:
-        translateY(0)
-        scale(1);
+        transform:translateY(0) scale(1);
     }
 }
+
+
+/* BADGE */
 
 .badge{
     display:inline-block;
 
     padding:7px 13px;
 
-    border:
-    1px solid
-    rgba(255,255,255,.2);
+    border:1px solid rgba(255,255,255,.2);
 
     border-radius:99px;
 
@@ -146,15 +139,16 @@ body::before{
 
     color:#ffd5e6;
 
-    background:
-    rgba(255,255,255,.07);
+    background:rgba(255,255,255,.07);
 
     margin-bottom:15px;
 }
 
+
+/* TITLE */
+
 h1{
-    font-size:
-    clamp(25px,7vw,40px);
+    font-size:clamp(25px,7vw,40px);
 
     line-height:1.25;
 
@@ -163,8 +157,7 @@ h1{
     color:white;
 
     text-shadow:
-    0 0 22px
-    rgba(255,130,185,.8);
+    0 0 22px rgba(255,130,185,.8);
 
     animation:titleGlow 2s infinite alternate;
 }
@@ -173,21 +166,17 @@ h1{
 
     from{
         text-shadow:
-        0 0 10px
-        rgba(255,130,185,.5);
+        0 0 10px rgba(255,130,185,.5);
     }
 
     to{
         text-shadow:
-        0 0 28px
-        rgba(255,130,185,1);
+        0 0 28px rgba(255,130,185,1);
     }
 }
 
 
-/* =========================
-   BIRTHDAY GIF
-========================= */
+/* BIRTHDAY GIF */
 
 .gif{
     display:block;
@@ -198,17 +187,15 @@ h1{
 
     border-radius:22px;
 
-    border:
-    1px solid
-    rgba(255,255,255,.28);
+    border:1px solid rgba(255,255,255,.28);
 
     box-shadow:
-    0 12px 35px
-    rgba(0,0,0,.35),
-
-    0 0 25px
-    rgba(255,130,185,.18);
+    0 12px 35px rgba(0,0,0,.35),
+    0 0 25px rgba(255,130,185,.18);
 }
+
+
+/* DIVIDER */
 
 .line{
     height:1px;
@@ -223,6 +210,9 @@ h1{
 
     margin:19px 0;
 }
+
+
+/* TEXT */
 
 .from{
     font-size:17px;
@@ -244,20 +234,20 @@ h1{
     line-height:1.6;
 }
 
+
+/* BUTTON */
+
 .btn{
 
     margin-top:20px;
 
     padding:13px 24px;
 
-    border:
-    1px solid
-    rgba(255,255,255,.3);
+    border:1px solid rgba(255,255,255,.3);
 
     border-radius:50px;
 
-    background:
-    rgba(255,130,185,.15);
+    background:rgba(255,130,185,.15);
 
     color:white;
 
@@ -270,8 +260,7 @@ h1{
     cursor:pointer;
 
     box-shadow:
-    0 0 20px
-    rgba(255,130,185,.2);
+    0 0 20px rgba(255,130,185,.2);
 
     transition:.3s;
 }
@@ -280,27 +269,26 @@ h1{
 
     transform:scale(1.05);
 
-    background:
-    rgba(255,130,185,.3);
+    background:rgba(255,130,185,.3);
 
     box-shadow:
-    0 0 30px
-    rgba(255,130,185,.5);
+    0 0 30px rgba(255,130,185,.5);
 }
 
 .btn:active{
     transform:scale(.96);
 }
 
+
+/* GIFT ICON */
+
 .gift{
 
     font-size:75px;
 
-    margin:
-    10px 0 5px;
+    margin:10px 0 5px;
 
-    animation:
-    giftBounce 1.5s infinite;
+    animation:giftBounce 1.5s infinite;
 }
 
 @keyframes giftBounce{
@@ -318,31 +306,26 @@ h1{
     }
 }
 
+
+/* GIFT GIF */
+
 .giftGif{
 
     display:block;
 
     width:min(100%,300px);
 
-    margin:
-    15px auto 20px;
+    margin:15px auto 20px;
 
     border-radius:22px;
 
-    border:
-    1px solid
-    rgba(255,255,255,.28);
+    border:1px solid rgba(255,255,255,.28);
 
     box-shadow:
+    0 12px 35px rgba(0,0,0,.35),
+    0 0 30px rgba(255,130,185,.45);
 
-    0 12px 35px
-    rgba(0,0,0,.35),
-
-    0 0 30px
-    rgba(255,130,185,.45);
-
-    animation:
-    giftPop .8s ease;
+    animation:giftPop .8s ease;
 }
 
 @keyframes giftPop{
@@ -364,6 +347,9 @@ h1{
     }
 }
 
+
+/* CHUMMI TEXT */
+
 .giftTitle{
 
     font-size:25px;
@@ -373,12 +359,9 @@ h1{
     color:#ff9ec5;
 
     text-shadow:
-    0 0 18px
-    rgba(255,130,185,.8);
+    0 0 18px rgba(255,130,185,.8);
 
-    animation:
-    titleGlow 1.5s
-    infinite alternate;
+    animation:titleGlow 1.5s infinite alternate;
 }
 
 .giftText{
@@ -392,6 +375,9 @@ h1{
     line-height:1.7;
 }
 
+
+/* FOOTER */
+
 .footer{
 
     margin-top:18px;
@@ -403,6 +389,9 @@ h1{
     color:#a99aa4;
 }
 
+
+/* FLOATING HEARTS */
+
 .heart{
 
     position:fixed;
@@ -411,8 +400,7 @@ h1{
 
     opacity:.7;
 
-    animation:
-    float 7s linear infinite;
+    animation:float 7s linear infinite;
 }
 
 @keyframes float{
@@ -430,6 +418,9 @@ h1{
     }
 }
 
+
+/* CONFETTI */
+
 .confetti{
 
     position:fixed;
@@ -439,7 +430,6 @@ h1{
     height:14px;
 
     top:50%;
-
     left:50%;
 
     z-index:9999;
@@ -456,7 +446,6 @@ h1{
 @keyframes confettiBlast{
 
     0%{
-
         transform:
         translate(-50%,-50%)
         rotate(0deg)
@@ -466,7 +455,6 @@ h1{
     }
 
     100%{
-
         transform:
         translate(
             calc(-50% + var(--x)),
@@ -482,7 +470,11 @@ h1{
 </style>
 </head>
 
+
 <body>
+
+
+<!-- FLOATING DECORATIONS -->
 
 <div
 class="heart"
@@ -509,7 +501,10 @@ style="left:90%;animation-delay:4s">
 </div>
 
 
-<!-- PAGE 1 -->
+
+<!-- ==============================
+     PAGE 1
+============================== -->
 
 <section
 id="page1"
@@ -517,9 +512,11 @@ class="page">
 
 <main class="card">
 
+
     <div class="badge">
         A SPECIAL DAY ✦ 2026
     </div>
+
 
     <h1>
         ♡ Hᴀᴘᴘʏ Bɪʀᴛʜᴅᴀʏ<br>
@@ -527,7 +524,7 @@ class="page">
     </h1>
 
 
-    <!-- FIXED BIRTHDAY GIF PATH -->
+    <!-- BIRTHDAY GIF -->
 
     <img
         src="birthday%20(1).gif"
@@ -538,9 +535,11 @@ class="page">
 
     <div class="line"></div>
 
+
     <div class="from">
         FROM ALPHA × ZENITH MEMBERS 🖤
     </div>
+
 
     <p class="message">
         May your day be filled with happiness,
@@ -548,6 +547,8 @@ class="page">
         memories. 🎂✨
     </p>
 
+
+    <!-- MUSIC -->
 
     <audio
         id="birthdayMusic"
@@ -569,7 +570,11 @@ class="page">
 
     </button>
 
+
     <br>
+
+
+    <!-- OPEN GIFT -->
 
     <button
         class="btn"
@@ -584,12 +589,16 @@ class="page">
         WITH LOVE • ALPHA × ZENITH
     </div>
 
+
 </main>
 
 </section>
 
 
-<!-- PAGE 2 -->
+
+<!-- ==============================
+     PAGE 2
+============================== -->
 
 <section
 id="page2"
@@ -597,9 +606,11 @@ class="page hidden">
 
 <main class="card">
 
+
     <div class="badge">
         YOUR SPECIAL GIFT 🎁
     </div>
+
 
     <div class="gift">
         🎁
@@ -609,7 +620,7 @@ class="page hidden">
     <!-- GIFT GIF -->
 
     <img
-        src="gift.gif"
+        src="gift%20(1).gif"
         class="giftGif"
         alt="Surprise Gift"
     >
@@ -651,14 +662,20 @@ class="page hidden">
         ALPHA × ZENITH • FOREVER 🖤
     </div>
 
+
 </main>
 
 </section>
 
 
+
 <script>
 
-/* MUSIC */
+
+/* ==============================
+   MUSIC
+   START FROM 50 SECONDS
+============================== */
 
 const music =
 document.getElementById(
@@ -677,7 +694,7 @@ function toggleMusic(){
 
         music.currentTime = 50;
 
-        music.play();
+        music.play().catch(() => {});
 
         musicBtn.innerHTML =
         "🔊 MUSIC ON";
@@ -696,9 +713,27 @@ function toggleMusic(){
 }
 
 
-/* OPEN GIFT */
+/* ==============================
+   OPEN GIFT
+   CONFETTI
+============================== */
 
 function openGift(){
+
+    /* MUSIC START */
+
+    if(music.paused){
+
+        music.currentTime = 50;
+
+        music.play().catch(() => {});
+
+        musicBtn.innerHTML =
+        "🔊 MUSIC ON";
+    }
+
+
+    /* CONFETTI */
 
     for(
         let i = 0;
@@ -710,6 +745,7 @@ function openGift(){
         document.createElement(
             "div"
         );
+
 
         confetti.className =
         "confetti";
@@ -768,15 +804,15 @@ function openGift(){
 
         setTimeout(
             () => {
-
                 confetti.remove();
-
             },
             2200
         );
 
     }
 
+
+    /* PAGE CHANGE */
 
     document
     .getElementById("page1")
@@ -790,7 +826,9 @@ function openGift(){
 }
 
 
-/* BACK */
+/* ==============================
+   BACK BUTTON
+============================== */
 
 function backHome(){
 
