@@ -43,11 +43,6 @@ body{
     );
 }
 
-
-/* =========================
-   BACKGROUND STARS
-========================= */
-
 body::before{
     content:"";
     position:fixed;
@@ -72,11 +67,6 @@ body::before{
     }
 }
 
-
-/* =========================
-   PAGE
-========================= */
-
 .page{
     width:100%;
 
@@ -89,11 +79,6 @@ body::before{
 .hidden{
     display:none !important;
 }
-
-
-/* =========================
-   CARD
-========================= */
 
 .card{
     position:relative;
@@ -144,11 +129,6 @@ body::before{
     }
 }
 
-
-/* =========================
-   BADGE
-========================= */
-
 .badge{
     display:inline-block;
 
@@ -171,11 +151,6 @@ body::before{
 
     margin-bottom:15px;
 }
-
-
-/* =========================
-   BIRTHDAY TITLE
-========================= */
 
 h1{
     font-size:
@@ -235,11 +210,6 @@ h1{
     rgba(255,130,185,.18);
 }
 
-
-/* =========================
-   DIVIDER
-========================= */
-
 .line{
     height:1px;
 
@@ -253,11 +223,6 @@ h1{
 
     margin:19px 0;
 }
-
-
-/* =========================
-   TEXT
-========================= */
 
 .from{
     font-size:17px;
@@ -278,11 +243,6 @@ h1{
 
     line-height:1.6;
 }
-
-
-/* =========================
-   BUTTON
-========================= */
 
 .btn{
 
@@ -332,11 +292,6 @@ h1{
     transform:scale(.96);
 }
 
-
-/* =========================
-   GIFT
-========================= */
-
 .gift{
 
     font-size:75px;
@@ -362,11 +317,6 @@ h1{
         rotate(4deg);
     }
 }
-
-
-/* =========================
-   GIFT GIF
-========================= */
 
 .giftGif{
 
@@ -414,11 +364,6 @@ h1{
     }
 }
 
-
-/* =========================
-   CHUMMI TEXT
-========================= */
-
 .giftTitle{
 
     font-size:25px;
@@ -447,11 +392,6 @@ h1{
     line-height:1.7;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
-
 .footer{
 
     margin-top:18px;
@@ -462,11 +402,6 @@ h1{
 
     color:#a99aa4;
 }
-
-
-/* =========================
-   FLOATING HEARTS
-========================= */
 
 .heart{
 
@@ -494,11 +429,6 @@ h1{
         rotate(360deg);
     }
 }
-
-
-/* =========================
-   CONFETTI
-========================= */
 
 .confetti{
 
@@ -552,11 +482,7 @@ h1{
 </style>
 </head>
 
-
 <body>
-
-
-<!-- FLOATING DECORATIONS -->
 
 <div
 class="heart"
@@ -583,10 +509,7 @@ style="left:90%;animation-delay:4s">
 </div>
 
 
-
-<!-- =====================================
-     PAGE 1
-===================================== -->
+<!-- PAGE 1 -->
 
 <section
 id="page1"
@@ -594,29 +517,20 @@ class="page">
 
 <main class="card">
 
-
     <div class="badge">
-
         A SPECIAL DAY ✦ 2026
-
     </div>
 
-
-    <!-- EXACT FONT -->
-
     <h1>
-
         ♡ Hᴀᴘᴘʏ Bɪʀᴛʜᴅᴀʏ<br>
-
         Vʏᴜᴋ Bᴜʙᴜ ♡
-
     </h1>
 
 
-    <!-- BIRTHDAY GIF -->
+    <!-- FIXED BIRTHDAY GIF PATH -->
 
     <img
-        src="birthday.gif"
+        src="birthday%20(1).gif"
         class="gif"
         alt="Birthday GIF"
     >
@@ -624,24 +538,16 @@ class="page">
 
     <div class="line"></div>
 
-
     <div class="from">
-
         FROM ALPHA × ZENITH MEMBERS 🖤
-
     </div>
 
-
     <p class="message">
-
         May your day be filled with happiness,
         smiles, good vibes and unforgettable
         memories. 🎂✨
-
     </p>
 
-
-    <!-- MUSIC -->
 
     <audio
         id="birthdayMusic"
@@ -663,11 +569,7 @@ class="page">
 
     </button>
 
-
     <br>
-
-
-    <!-- GIFT -->
 
     <button
         class="btn"
@@ -679,21 +581,15 @@ class="page">
 
 
     <div class="footer">
-
         WITH LOVE • ALPHA × ZENITH
-
     </div>
-
 
 </main>
 
 </section>
 
 
-
-<!-- =====================================
-     PAGE 2
-===================================== -->
+<!-- PAGE 2 -->
 
 <section
 id="page2"
@@ -701,22 +597,16 @@ class="page hidden">
 
 <main class="card">
 
-
     <div class="badge">
-
         YOUR SPECIAL GIFT 🎁
-
     </div>
-
 
     <div class="gift">
-
         🎁
-
     </div>
 
 
-    <!-- CAT GIF -->
+    <!-- GIFT GIF -->
 
     <img
         src="gift.gif"
@@ -725,12 +615,8 @@ class="page hidden">
     >
 
 
-    <!-- EXACT FONT -->
-
     <div class="giftTitle">
-
         𝓛𝓮 𝓒𝓱𝓾𝓶𝓶𝓲 𝓥𝔂𝓾𝓴 𝓑𝓾𝓫𝓾 😘💋
-
     </div>
 
 
@@ -762,25 +648,17 @@ class="page hidden">
 
 
     <div class="footer">
-
         ALPHA × ZENITH • FOREVER 🖤
-
     </div>
-
 
 </main>
 
 </section>
 
 
-
 <script>
 
-
-/* =====================================
-   MUSIC
-   STARTS FROM 50 SECONDS
-===================================== */
+/* MUSIC */
 
 const music =
 document.getElementById(
@@ -818,10 +696,7 @@ function toggleMusic(){
 }
 
 
-/* =====================================
-   OPEN GIFT
-   CONFETTI EXPLOSION
-===================================== */
+/* OPEN GIFT */
 
 function openGift(){
 
@@ -835,7 +710,6 @@ function openGift(){
         document.createElement(
             "div"
         );
-
 
         confetti.className =
         "confetti";
@@ -904,8 +778,6 @@ function openGift(){
     }
 
 
-    /* PAGE CHANGE */
-
     document
     .getElementById("page1")
     .classList.add("hidden");
@@ -918,9 +790,7 @@ function openGift(){
 }
 
 
-/* =====================================
-   BACK
-===================================== */
+/* BACK */
 
 function backHome(){
 
