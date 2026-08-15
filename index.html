@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>♡ Hᴀᴘᴘʏ Bɪʀᴛʜᴅᴀʏ Vʏᴜᴋ Bᴜʙᴜ ♡</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    overflow:hidden;
+    font-family:Arial,sans-serif;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(
+        circle at 20% 15%,
+        #ff9fc8 0,
+        transparent 28%
+    ),
+    radial-gradient(
+        circle at 85% 80%,
+        #c9a7ff 0,
+        transparent 30%
+    ),
+    linear-gradient(
+        135deg,
+        #160d1d,
+        #291323 45%,
+        #0e0b15
+    );
+}
+
+
+/* =========================
+   BACKGROUND STARS
+========================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,255,255,.15) 1px,
+        transparent 1.5px
+    );
+
+    background-size:35px 35px;
+
+    animation:stars 12s linear infinite;
+}
+
+@keyframes stars{
+    to{
+        transform:translateY(35px);
+    }
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page{
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.hidden{
+    display:none !important;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    position:relative;
+
+    width:min(92%,470px);
+
+    padding:30px 22px 26px;
+
+    text-align:center;
+
+    border:
+    1px solid
+    rgba(255,255,255,.22);
+
+    border-radius:32px;
+
+    background:
+    rgba(255,255,255,.09);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+    0 25px 80px
+    rgba(0,0,0,.45),
+
+    0 0 45px
+    rgba(255,120,180,.18);
+
+    animation:enter .9s ease;
+}
+
+@keyframes enter{
+
+    from{
+        opacity:0;
+
+        transform:
+        translateY(25px)
+        scale(.95);
+    }
+
+    to{
+        opacity:1;
+
+        transform:
+        translateY(0)
+        scale(1);
+    }
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.badge{
+    display:inline-block;
+
+    padding:7px 13px;
+
+    border:
+    1px solid
+    rgba(255,255,255,.2);
+
+    border-radius:99px;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    color:#ffd5e6;
+
+    background:
+    rgba(255,255,255,.07);
+
+    margin-bottom:15px;
+}
+
+
+/* =========================
+   BIRTHDAY TITLE
+========================= */
+
+h1{
+    font-size:
+    clamp(25px,7vw,40px);
+
+    line-height:1.25;
+
+    letter-spacing:1px;
+
+    color:white;
+
+    text-shadow:
+    0 0 22px
+    rgba(255,130,185,.8);
+
+    animation:titleGlow 2s infinite alternate;
+}
+
+@keyframes titleGlow{
+
+    from{
+        text-shadow:
+        0 0 10px
+        rgba(255,130,185,.5);
+    }
+
+    to{
+        text-shadow:
+        0 0 28px
+        rgba(255,130,185,1);
+    }
+}
+
+
+/* =========================
+   BIRTHDAY GIF
+========================= */
+
+.gif{
+    display:block;
+
+    width:min(100%,300px);
+
+    margin:22px auto 18px;
+
+    border-radius:22px;
+
+    border:
+    1px solid
+    rgba(255,255,255,.28);
+
+    box-shadow:
+    0 12px 35px
+    rgba(0,0,0,.35),
+
+    0 0 25px
+    rgba(255,130,185,.18);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.line{
+    height:1px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        #ff9ec5,
+        transparent
+    );
+
+    margin:19px 0;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.from{
+    font-size:17px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    color:#ffe0ec;
+}
+
+.message{
+    margin-top:9px;
+
+    color:#d9cbd3;
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+
+    margin-top:20px;
+
+    padding:13px 24px;
+
+    border:
+    1px solid
+    rgba(255,255,255,.3);
+
+    border-radius:50px;
+
+    background:
+    rgba(255,130,185,.15);
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 0 20px
+    rgba(255,130,185,.2);
+
+    transition:.3s;
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+    background:
+    rgba(255,130,185,.3);
+
+    box-shadow:
+    0 0 30px
+    rgba(255,130,185,.5);
+}
+
+.btn:active{
+    transform:scale(.96);
+}
+
+
+/* =========================
+   GIFT
+========================= */
+
+.gift{
+
+    font-size:75px;
+
+    margin:
+    10px 0 5px;
+
+    animation:
+    giftBounce 1.5s infinite;
+}
+
+@keyframes giftBounce{
+
+    0%,100%{
+        transform:
+        translateY(0)
+        rotate(0);
+    }
+
+    50%{
+        transform:
+        translateY(-12px)
+        rotate(4deg);
+    }
+}
+
+
+/* =========================
+   GIFT GIF
+========================= */
+
+.giftGif{
+
+    display:block;
+
+    width:min(100%,300px);
+
+    margin:
+    15px auto 20px;
+
+    border-radius:22px;
+
+    border:
+    1px solid
+    rgba(255,255,255,.28);
+
+    box-shadow:
+
+    0 12px 35px
+    rgba(0,0,0,.35),
+
+    0 0 30px
+    rgba(255,130,185,.45);
+
+    animation:
+    giftPop .8s ease;
+}
+
+@keyframes giftPop{
+
+    from{
+        opacity:0;
+
+        transform:
+        scale(.4)
+        rotate(-8deg);
+    }
+
+    to{
+        opacity:1;
+
+        transform:
+        scale(1)
+        rotate(0);
+    }
+}
+
+
+/* =========================
+   CHUMMI TEXT
+========================= */
+
+.giftTitle{
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    color:#ff9ec5;
+
+    text-shadow:
+    0 0 18px
+    rgba(255,130,185,.8);
+
+    animation:
+    titleGlow 1.5s
+    infinite alternate;
+}
+
+.giftText{
+
+    margin-top:13px;
+
+    color:#e0d2da;
+
+    font-size:14px;
+
+    line-height:1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    margin-top:18px;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    color:#a99aa4;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.heart{
+
+    position:fixed;
+
+    font-size:20px;
+
+    opacity:.7;
+
+    animation:
+    float 7s linear infinite;
+}
+
+@keyframes float{
+
+    from{
+        transform:
+        translateY(110vh)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translateY(-15vh)
+        rotate(360deg);
+    }
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti{
+
+    position:fixed;
+
+    width:9px;
+
+    height:14px;
+
+    top:50%;
+
+    left:50%;
+
+    z-index:9999;
+
+    pointer-events:none;
+
+    animation:
+    confettiBlast
+    1.8s
+    ease-out
+    forwards;
+}
+
+@keyframes confettiBlast{
+
+    0%{
+
+        transform:
+        translate(-50%,-50%)
+        rotate(0deg)
+        scale(1);
+
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+        translate(
+            calc(-50% + var(--x)),
+            calc(-50% + var(--y))
+        )
+        rotate(var(--r))
+        scale(.7);
+
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- FLOATING DECORATIONS -->
+
+<div
+class="heart"
+style="left:8%;animation-delay:0s">
+♡
+</div>
+
+<div
+class="heart"
+style="left:25%;animation-delay:2s">
+✦
+</div>
+
+<div
+class="heart"
+style="left:72%;animation-delay:1s">
+♡
+</div>
+
+<div
+class="heart"
+style="left:90%;animation-delay:4s">
+✦
+</div>
+
+
+
+<!-- =====================================
+     PAGE 1
+===================================== -->
+
+<section
+id="page1"
+class="page">
+
+<main class="card">
+
+
+    <div class="badge">
+
+        A SPECIAL DAY ✦ 2026
+
+    </div>
+
+
+    <!-- EXACT FONT -->
+
+    <h1>
+
+        ♡ Hᴀᴘᴘʏ Bɪʀᴛʜᴅᴀʏ<br>
+
+        Vʏᴜᴋ Bᴜʙᴜ ♡
+
+    </h1>
+
+
+    <!-- BIRTHDAY GIF -->
+
+    <img
+        src="birthday.gif"
+        class="gif"
+        alt="Birthday GIF"
+    >
+
+
+    <div class="line"></div>
+
+
+    <div class="from">
+
+        FROM ALPHA × ZENITH MEMBERS 🖤
+
+    </div>
+
+
+    <p class="message">
+
+        May your day be filled with happiness,
+        smiles, good vibes and unforgettable
+        memories. 🎂✨
+
+    </p>
+
+
+    <!-- MUSIC -->
+
+    <audio
+        id="birthdayMusic"
+        loop>
+
+        <source
+            src="song.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <button
+        class="btn"
+        id="musicBtn"
+        onclick="toggleMusic()">
+
+        🎵 PLAY MUSIC
+
+    </button>
+
+
+    <br>
+
+
+    <!-- GIFT -->
+
+    <button
+        class="btn"
+        onclick="openGift()">
+
+        🎁 OPEN YOUR GIFT
+
+    </button>
+
+
+    <div class="footer">
+
+        WITH LOVE • ALPHA × ZENITH
+
+    </div>
+
+
+</main>
+
+</section>
+
+
+
+<!-- =====================================
+     PAGE 2
+===================================== -->
+
+<section
+id="page2"
+class="page hidden">
+
+<main class="card">
+
+
+    <div class="badge">
+
+        YOUR SPECIAL GIFT 🎁
+
+    </div>
+
+
+    <div class="gift">
+
+        🎁
+
+    </div>
+
+
+    <!-- CAT GIF -->
+
+    <img
+        src="gift.gif"
+        class="giftGif"
+        alt="Surprise Gift"
+    >
+
+
+    <!-- EXACT FONT -->
+
+    <div class="giftTitle">
+
+        𝓛𝓮 𝓒𝓱𝓾𝓶𝓶𝓲 𝓥𝔂𝓾𝓴 𝓑𝓾𝓫𝓾 😘💋
+
+    </div>
+
+
+    <p class="giftText">
+
+        Happy Birthday once again! 🎂✨
+
+        <br><br>
+
+        Stay happy, keep smiling and keep
+        making amazing memories. 🫶🏻
+
+        <br><br>
+
+        From
+        <b>ALPHA × ZENITH MEMBERS</b>
+        🖤
+
+    </p>
+
+
+    <button
+        class="btn"
+        onclick="backHome()">
+
+        ← BACK
+
+    </button>
+
+
+    <div class="footer">
+
+        ALPHA × ZENITH • FOREVER 🖤
+
+    </div>
+
+
+</main>
+
+</section>
+
+
+
+<script>
+
+
+/* =====================================
+   MUSIC
+   STARTS FROM 50 SECONDS
+===================================== */
+
+const music =
+document.getElementById(
+    "birthdayMusic"
+);
+
+const musicBtn =
+document.getElementById(
+    "musicBtn"
+);
+
+
+function toggleMusic(){
+
+    if(music.paused){
+
+        music.currentTime = 50;
+
+        music.play();
+
+        musicBtn.innerHTML =
+        "🔊 MUSIC ON";
+
+    }
+
+    else{
+
+        music.pause();
+
+        musicBtn.innerHTML =
+        "🔇 MUSIC OFF";
+
+    }
+
+}
+
+
+/* =====================================
+   OPEN GIFT
+   CONFETTI EXPLOSION
+===================================== */
+
+function openGift(){
+
+    for(
+        let i = 0;
+        i < 100;
+        i++
+    ){
+
+        const confetti =
+        document.createElement(
+            "div"
+        );
+
+
+        confetti.className =
+        "confetti";
+
+
+        const x =
+        (Math.random() - 0.5)
+        * 900;
+
+
+        const y =
+        (Math.random() - 0.5)
+        * 900;
+
+
+        const r =
+        Math.random() * 1080;
+
+
+        confetti.style.setProperty(
+            "--x",
+            x + "px"
+        );
+
+
+        confetti.style.setProperty(
+            "--y",
+            y + "px"
+        );
+
+
+        confetti.style.setProperty(
+            "--r",
+            r + "deg"
+        );
+
+
+        confetti.style.background =
+        `hsl(
+            ${Math.random() * 360},
+            100%,
+            70%
+        )`;
+
+
+        confetti.style.animationDelay =
+        Math.random()
+        * 0.25
+        + "s";
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(
+            () => {
+
+                confetti.remove();
+
+            },
+            2200
+        );
+
+    }
+
+
+    /* PAGE CHANGE */
+
+    document
+    .getElementById("page1")
+    .classList.add("hidden");
+
+
+    document
+    .getElementById("page2")
+    .classList.remove("hidden");
+
+}
+
+
+/* =====================================
+   BACK
+===================================== */
+
+function backHome(){
+
+    document
+    .getElementById("page2")
+    .classList.add("hidden");
+
+
+    document
+    .getElementById("page1")
+    .classList.remove("hidden");
+
+}
+
+</script>
+
+</body>
+</html>
